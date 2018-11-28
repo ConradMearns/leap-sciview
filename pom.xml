@@ -10,11 +10,11 @@
 	</parent>
 
 	<groupId>sc.iview</groupId>
-	<artifactId>minimal-sciview</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>leap-sciview</artifactId>
+	<version>0.0.0-SNAPSHOT</version>
 
-	<name>minimal-sciview</name>
-	<description>This is a minimal SciView project.</description>
+	<name>leap-sciview</name>
+	<description>Leap Motion integration into SciView</description>
 	<url>http://sc.iview.sc/</url>
 	<inceptionYear>2018</inceptionYear>
 	<organization>
@@ -30,21 +30,17 @@
 
 	<developers>
 		<developer>
-			<id>kephale</id>
-			<name>Kyle Harrington</name>
-			<url>http://imagej.net/User:Kharrington</url>
-			<roles>
-				<role>founder</role>
-				<role>lead</role>
-				<role>developer</role>
-				<role>debugger</role>
-				<role>reviewer</role>
-				<role>support</role>
-				<role>maintainer</role>
-			</roles>
+			<id>ConradMearns</id>
+			<name>Conrad Mearns</name>
+			<url>http://conrads.website</url>
 		</developer>
 	</developers>
 	<contributors>
+		<contributor>
+			<properties><id>kephale</id></properties>
+			<name>Kyle Harrington</name>
+			<url>http://imagej.net/User:Kharrington</url>
+		</contributor>
 		<contributor>
 			<name>Curtis Rueden</name>
 			<url>http://imagej.net/User:ctrueden</url>
@@ -59,6 +55,7 @@
 		</mailingList>
 	</mailingLists>
 
+	<!-- TODO Fix this, I'm just too lazy rn -->
 	<scm>
 		<connection>scm:git:git://github.com/kephale/minimal-sciview</connection>
 		<developerConnection>scm:git:git@github.com:kephale/minimal-sciview</developerConnection>
@@ -75,12 +72,12 @@
 	</ciManagement>
 
 	<properties>
-		<main-class>sc.iview.minimal.Main</main-class>
+		<main-class>sc.iview.leap.Main</main-class>
 		<package-name>net.imagej</package-name>
 
 		<license.licenseName>bsd_2</license.licenseName>
 		<license.copyrightOwners>Board of Regents of the University of Idaho.</license.copyrightOwners>
-		<license.projectName>Minimal sciview.</license.projectName>
+		<license.projectName>leap-sciview</license.projectName>
 
 		<!-- NB: Deploy releases to the ImageJ Maven repository. -->
 		<releaseProfiles>deploy-to-imagej</releaseProfiles>
@@ -95,10 +92,18 @@
 
 	<dependencies>
 
+		<!-- Leap Motion dependencies -->
+		<dependency>
+      <groupId>com.leapmotion.leap</groupId>
+      <artifactId>leapMotion</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+
+
 		<dependency>
 			<groupId>sc.iview</groupId>
 			<artifactId>sciview</artifactId>
-			<version>0.1.2</version>
+			<version>0.1.5</version>
 		</dependency>
 
 		<!-- ImageJ dependencies -->

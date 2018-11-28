@@ -97,6 +97,8 @@
       <groupId>com.leapmotion.leap</groupId>
       <artifactId>leapMotion</artifactId>
       <version>1.0.0</version>
+			<scope>system</scope>
+			<systemPath>${project.build.directory}/lib/LeapJava.jar</systemPath>
     </dependency>
 
 

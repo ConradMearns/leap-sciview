@@ -1,3 +1,7 @@
+# USAGE
+Use `mvn` to compile.
+Ensure that `LeapJava.jar` (from target/lib) is also stored in `Fiji.app/plugins/jars/lib`
+
 # LICENSING
 
 leap-sciview is distributed under a
@@ -9,6 +13,8 @@ For the list of ImageJ developers and contributors, see
 [the parent POM](https://github.com/imagej/pom-imagej/blob/master/pom.xml).
 
 ---------------------------------------------
+
+# Maybe useful
 
 [restlessprogrammer](http://www.restlessprogrammer.com/2013/03/developing-for-leap-motion-controller.html)
 

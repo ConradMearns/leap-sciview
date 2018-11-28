@@ -2,7 +2,6 @@
 .metadata
 .project
 .settings
-target
 *.swp
 /.idea
 *.iml
@@ -10,3 +9,9 @@ target
 nb-configuration.xml
 /scripts/
 *.sh
+/target/classes
+/target/failsafe-reports
+/target/generated-sources
+/target/maven-archiver
+/target/*.jar
+LeapSDK

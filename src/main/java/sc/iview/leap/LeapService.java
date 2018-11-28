@@ -3,6 +3,9 @@ package sc.iview.leap;
 // import sc.iview.SciViewService;
 // import sc.iview.SciView;
 
+import com.leapmotion.leap.*;
+import com.leapmotion.leap.Controller;
+
 import net.imagej.ImageJService;
 
 import org.scijava.plugin.Parameter;
@@ -15,7 +18,7 @@ public class LeapService extends AbstractService implements ImageJService{
 
   @Override
   public void initialize() {
-    System.out.println("aahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+    Controller controller = new Controller();
   }
 
 }
